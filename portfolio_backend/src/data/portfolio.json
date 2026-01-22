@@ -1,0 +1,48 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "role": "Full Stack Developer",
+    "location": "Your City, Country",
+    "headline": "I build modern web experiences with a focus on performance, accessibility, and clean UI.",
+    "email": "you@example.com"
+  },
+  "about": {
+    "summary": "I’m a full-stack developer focused on building clean, reliable products. I enjoy turning complex problems into simple, elegant solutions.",
+    "highlights": [
+      "Modern React + API-driven UI",
+      "Node/Express backend development",
+      "Responsive, accessible interfaces"
+    ]
+  },
+  "skills": [
+    { "category": "Frontend", "items": ["React", "JavaScript", "HTML", "CSS", "Accessibility"] },
+    { "category": "Backend", "items": ["Node.js", "Express", "REST APIs"] },
+    { "category": "Tooling", "items": ["Git", "CI/CD", "Testing"] }
+  ],
+  "projects": [
+    {
+      "id": "ocean-portfolio",
+      "title": "Ocean Professional Portfolio",
+      "description": "A fullstack portfolio website with a clean Ocean Professional theme and REST APIs.",
+      "tags": ["React", "Express", "REST"],
+      "links": {
+        "demo": "https://example.com",
+        "source": "https://github.com/example/repo"
+      }
+    },
+    {
+      "id": "contact-api",
+      "title": "Contact Form API",
+      "description": "A minimal Express API that validates and persists contact submissions to a JSON file.",
+      "tags": ["Express", "Validation"],
+      "links": {
+        "demo": "https://example.com",
+        "source": "https://github.com/example/repo"
+      }
+    }
+  ],
+  "social": [
+    { "label": "GitHub", "url": "https://github.com/your-handle" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/your-handle" }
+  ]
+}

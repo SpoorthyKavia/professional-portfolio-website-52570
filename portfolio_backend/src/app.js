@@ -44,12 +44,21 @@ app.use(express.json());
 // Mount routes
 app.use('/', routes);
 
-// Error handling middleware
+/**
+ * Error handling middleware.
+ * Ensures validation errors from services are returned with a 400 and details.
+ */
 app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({
+  const status = err.status && Number.isInteger(err.status) ? err.status : 500;
+
+  if (status >= 500) {
+    console.error(err.stack || err);
+  }
+
+  return res.status(status).json({
     status: 'error',
-    message: 'Internal Server Error',
+    message: err.message || 'Internal Server Error',
+    ...(err.details ? { details: err.details } : {}),
   });
 });
 
